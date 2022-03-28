@@ -9,6 +9,73 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
+  <header class="header">
+    <div class="header__title">Cart - Customer Information - Shiping Method - <b>Payment Method</b></div>
+  </header>
+  <section class="section">
+    <div class="payment__info">
+      <div class="heading">Payment information</div>
+      <form class="form">
+        <div class="card-number__wrapper">
+          <label class="number" for="number">Card number</label>
+          <input type="text" id="number" placeholder="**** **** **** ****">
+        </div>
+        <div class="card-holder__wrapper">
+          <label for="holder" class="holder">Card Holder</label>
+          <input type="text" id="holder" placeholder="Michael Jordan">
+        </div>
+        <div class="card-date__wrapper">
+          <label for="exp-date" class="exp-data">Exp.Date</label>
+          <input type="text" id="exp-date" placeholder="03/19">
+        </div>
+        <div class="card-cvc__wrapper">
+          <label for="cvc" class="cvc">Cvc</label>
+          <input type="text" id="cvc" placeholder="***">
+        </div>
+      </form>
+    </div>
 
+    <div class="payment__price">
+      <div class="price__header">
+        <div class="img__wrapper">
+          <img src="img/order.jpg" alt="">
+        </div>
+        <div class="header__title">Chocolate bar</div>
+        <div class="header__price">$2.49</div>
+      </div>
+      <div class="price__section">
+        <div class="section__item">
+          <p class="item__title">Subtotal</p>
+          <p class="item__price">$4.98</p>
+        </div>
+        <div class="section__item">
+          <p class="item__title">Shipping</p>
+          <p class="item__price">$3.00</p>
+        </div>
+      </div>
+      <div class="price__footer">
+        <div class="footer__total">Total</div>
+        <div class="footer__price">$7.98</div>
+      </div>
+    </div>
+
+    <div class="billing__address">
+      <div class="heading">Billing address</div>
+      <div class="address-wrapper">
+        <div class="shipping__wrapper">
+          <input type="radio" id="shipping">
+          <label for="shipping" class="shipping" name="address">Same as the shipping address</label>
+        </div>
+        <div class="billing">
+          <input type="radio" id="billing">
+          <label for="billing" class="billing" name="address">Use a different billing address</label>
+        </div>
+      </div>
+    </div>
+  </section>  
+  <footer class="footer">
+    <a class="footer__link" href="#">Return to shipping method</a>
+    <button class="footer__btn" type="button">Complate order</button>
+  </footer>
 </body>
 </html>
